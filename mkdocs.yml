@@ -1,0 +1,5 @@
+site_name: Arca Documentation
+site_url: https://bceln.github.io
+nav:
+  - Home: index.md
+
