@@ -1,5 +1,7 @@
 site_name: Arca Documentation
 site_url: https://bceln.github.io
 nav:
-  - Home: docs/index.md
-
+  - Home: index.md
+  - About:
+    - About Arca: about/about.md
+    - Support: about/support.md
