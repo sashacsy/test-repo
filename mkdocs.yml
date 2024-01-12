@@ -3,5 +3,5 @@ site_url: https://bceln.github.io
 nav:
   - Home: index.md
   - About:
-    - About Arca: about/about.md
+    - About Arca: about/about-arca.md
     - Support: about/support.md
