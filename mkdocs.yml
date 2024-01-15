@@ -3,6 +3,28 @@ site_url: https://bceln.github.io
 
 theme:
   name: material
+  logo: 'assets/Arca_Logo_Web.svg'
+  palette:
+    primary: 'lime'
+    accent: 'purple'
+  language: 'en'
+  features:
+    - content.action.edit
+  icon:
+    edit: material/pencil
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - toc:
+        permalink: True
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 
 nav:
   - Home: index.md
