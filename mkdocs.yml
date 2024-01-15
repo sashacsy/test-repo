@@ -1,5 +1,8 @@
 site_name: Arca Documentation
 site_url: https://bceln.github.io
+repo_url: https://github.com/bceln/bceln.github.io
+edit_uri: edit/main/docs
+
 
 theme:
   name: material
@@ -10,8 +13,10 @@ theme:
   language: 'en'
   features:
     - content.action.edit
+    - content.action.view
   icon:
     edit: material/pencil
+    view: material/eye
 
 markdown_extensions:
   - admonition
