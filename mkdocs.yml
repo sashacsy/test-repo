@@ -5,3 +5,5 @@ nav:
   - About:
     - About Arca: about/about-arca.md
     - Support: about/support.md
+  - Migration:
+    - Timeline: migration/migration-timeline.md
