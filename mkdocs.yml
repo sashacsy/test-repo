@@ -8,7 +8,7 @@ theme:
   name: material
   logo: 'assets/Arca_Logo_web.svg'
   palette:
-    primary: 'lime'
+    primary: 'cyan'
     accent: 'purple'
   language: 'en'
   features:
@@ -30,6 +30,9 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+
+extra_css:
+  - stylesheets/extra.css
 
 nav:
   - Home: index.md
