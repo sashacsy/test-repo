@@ -1,5 +1,9 @@
 site_name: Arca Documentation
 site_url: https://bceln.github.io
+
+theme:
+  name: material
+
 nav:
   - Home: index.md
   - About:
