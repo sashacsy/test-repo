@@ -3,7 +3,7 @@ site_url: https://bceln.github.io
 
 theme:
   name: material
-  logo: 'assets/Arca_Logo_Web.svg'
+  logo: 'assets/Arca_Logo_Web.png'
   palette:
     primary: 'lime'
     accent: 'purple'
