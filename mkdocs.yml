@@ -14,6 +14,7 @@ theme:
   features:
     - content.action.edit
     - content.action.view
+    - announce.dismiss
   icon:
     edit: material/pencil
     view: material/eye
@@ -41,3 +42,4 @@ nav:
     - Support: about/support.md
   - Migration:
     - Timeline: migration/migration-timeline.md
+    - Metadata Mapping: migration/metadata-mapping.md
