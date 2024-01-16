@@ -40,6 +40,9 @@ nav:
   - About:
     - About Arca: about/about-arca.md
     - Support: about/support.md
+  - Troubleshooting:
+    - Troubleshooting: troubleshooting/troubleshooting.md
+    - Islandora 7 troubleshooting: troubleshooting/troubleshooting-i7.md
   - Migration:
     - Timeline: migration/migration-timeline.md
     - Metadata Mapping: migration/metadata-mapping.md

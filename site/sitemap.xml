@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://arca.github.io/</loc>
+         <loc>https://bceln.github.io/arca-docs/</loc>
          <lastmod>2024-01-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://arca.github.io/about/about-arca/</loc>
+         <loc>https://bceln.github.io/arca-docs/about/about-arca/</loc>
          <lastmod>2024-01-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://arca.github.io/about/support/</loc>
+         <loc>https://bceln.github.io/arca-docs/about/support/</loc>
          <lastmod>2024-01-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://arca.github.io/migration/metadata-mapping/</loc>
+         <loc>https://bceln.github.io/arca-docs/migration/metadata-mapping/</loc>
          <lastmod>2024-01-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://arca.github.io/migration/migration-timeline/</loc>
+         <loc>https://bceln.github.io/arca-docs/migration/migration-timeline/</loc>
          <lastmod>2024-01-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://arca.github.io/migration/migration-tasks/metadata-corrections/</loc>
+         <loc>https://bceln.github.io/arca-docs/migration/migration-tasks/metadata-corrections/</loc>
          <lastmod>2024-01-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
