@@ -43,3 +43,5 @@ nav:
   - Migration:
     - Timeline: migration/migration-timeline.md
     - Metadata Mapping: migration/metadata-mapping.md
+    - Migration Tasks:
+      - Metadata Corrections: migration/migration-tasks/metadata-corrections.md

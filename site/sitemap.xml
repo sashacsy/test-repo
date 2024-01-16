@@ -16,6 +16,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://bceln.github.io/migration/metadata-mapping/</loc>
+         <lastmod>2024-01-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://bceln.github.io/migration/migration-timeline/</loc>
          <lastmod>2024-01-15</lastmod>
          <changefreq>daily</changefreq>
