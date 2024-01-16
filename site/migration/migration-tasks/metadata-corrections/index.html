@@ -1,0 +1,881 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://bceln.github.io/migration/migration-tasks/metadata-corrections/">
+      
+      
+        <link rel="prev" href="../../metadata-mapping/">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.4">
+    
+    
+      
+        <title>Metadata Corrections - Arca Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#task-metadata-corrections" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Arca Documentation" class="md-header__button md-logo" aria-label="Arca Documentation" data-md-component="logo">
+      
+  <img src="../../../assets/Arca_Logo_web.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Arca Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Metadata Corrections
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/bceln/bceln.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Arca Documentation" class="md-nav__button md-logo" aria-label="Arca Documentation" data-md-component="logo">
+      
+  <img src="../../../assets/Arca_Logo_web.svg" alt="logo">
+
+    </a>
+    Arca Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/bceln/bceln.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            About
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/about-arca/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About Arca
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/support/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Support
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Migration
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Migration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../migration-timeline/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Timeline
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metadata-mapping/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Metadata Mapping
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Migration Tasks
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Migration Tasks
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Metadata Corrections
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Metadata Corrections
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#key-metadata-fields-and-how-to-handle-them" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key metadata fields and how to handle them
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-must-we-do-this" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why must we do this?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-create-my-own-facet-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      How do I create my own Facet Pages?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-make-corrections" class="md-nav__link">
+    <span class="md-ellipsis">
+      How do I make corrections?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#key-metadata-fields-and-how-to-handle-them" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key metadata fields and how to handle them
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-must-we-do-this" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why must we do this?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-create-my-own-facet-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      How do I create my own Facet Pages?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-make-corrections" class="md-nav__link">
+    <span class="md-ellipsis">
+      How do I make corrections?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/bceln/bceln.github.io/edit/main/docs/migration/migration-tasks/metadata-corrections.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/bceln/bceln.github.io/raw/main/docs/migration/migration-tasks/metadata-corrections.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5Z"/></svg>
+    </a>
+  
+
+
+<h1 id="task-metadata-corrections">TASK: Metadata Corrections<a class="headerlink" href="#task-metadata-corrections" title="Permanent link">&para;</a></h1>
+<p>In preparation for migration, all Arca Admins are asked to ensure that their metadata is correct, to standard, and ready to migrate. While all metadata should be consistent and good-quality, there are certain key elements that must be addressed before a site can be migrated.</p>
+<p><a href="https://arcabc.ca/browse/genre">Facet pages have been set up</a> to expose the values of most key metadata fields. You can see your site's fields particularly at the same path: <code>/browse/genre</code>. Please <a href="contact the admin centre">mailto:arcaoffice@bceln.ca</a> for help setting up your facet pages.</p>
+<p>When your metadata has been corrected, please be sure to apply those standards to any objects you ingest going forward, so that correction work does not need to be done again.</p>
+<h2 id="key-metadata-fields-and-how-to-handle-them">Key metadata fields and how to handle them<a class="headerlink" href="#key-metadata-fields-and-how-to-handle-them" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://arcabc.ca/browse/date">Dates</a>:<ul>
+<li>Must be formatted to the <a href="https://www.w3.org/TR/NOTE-datetime">W3C Standard</a>. This means:<ul>
+<li>Numerical format only (no text)</li>
+<li>YYYY-MM-DD, or YYYY-MM if only year and month are known, or YYYY if only the year is known.</li>
+</ul>
+</li>
+<li>If your date cannot meet the W3C standard (e.g. completely unknown, or certain digits are unknown), we can accommodate <a href="https://www.loc.gov/standards/datetime/">EDTF</a>. <ul>
+<li>Some EDTF examples:<ul>
+<li>
+<table>
+<thead>
+<tr>
+<th><strong>EDTF Format</strong></th>
+<th><strong>Use for</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1933?</td>
+<td>1933 (year uncertain)</td>
+</tr>
+<tr>
+<td>1945~</td>
+<td>1945 (year approximate)</td>
+</tr>
+<tr>
+<td>2016-04-12</td>
+<td>2016-04-12</td>
+</tr>
+<tr>
+<td>1860/1880?</td>
+<td>1860 to 1880 (year uncertain)</td>
+</tr>
+<tr>
+<td>1870/1880</td>
+<td>1870 to 1880</td>
+</tr>
+<tr>
+<td>19XX</td>
+<td>Sometime in the 1900s (decade and year uncertain)</td>
+</tr>
+<tr>
+<td>19X3</td>
+<td>Decade uncertain, year known</td>
+</tr>
+<tr>
+<td>XXXX-12-XX</td>
+<td>Some day in December, unknown year</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://arcabc.ca/browse/genre">Genres</a>:<ul>
+<li>Terms must be from either the <a href="https://www.loc.gov/standards/valuelist/marcgt.html">MARC Genre Terms list</a>, or the <a href="https://www.getty.edu/research/tools/vocabularies/aat/">Art &amp; Architecture Thesaurus</a>.<ul>
+<li>Include the authority used in your MODS, e.g. <code>&lt;genre authority="marcgt"&gt;book&lt;/genre&gt;</code>, or <code>&lt;genre authority="aat"&gt;comic operas&lt;/genre&gt;</code>.</li>
+<li>Follow the exact format the authority uses for the term: <strong>all lowercase, no punctuation</strong>; AAT is generally plural, MARCGT singular. </li>
+</ul>
+</li>
+<li>If it is truly impossible to find a term in either of the above vocabularies, use the <code>authority="local"</code> attribute.<ul>
+<li>Check the standard vocabularies for a synonym first.</li>
+<li>Format your term to match existing usage (i.e. lowercase, no punctuation).</li>
+</ul>
+</li>
+<li>There should be *only one value per <code>&lt;genre&gt;</code> element. If your object has more than one genre, use multiple genre elements -- i.e. <code>&lt;genre authority="marcgt"&gt;thesis&lt;/genre&gt;  &lt;genre authority="aat"&gt;photography&lt;/genre&gt;</code></li>
+</ul>
+</li>
+<li>Names (<a href="https://arcabc.ca/browse/names_personal">personal</a> and <a href="https://arcabc.ca/browse/names_corporate">corporate</a>): <ul>
+<li>Names must be consistent and deduplicated.<ul>
+<li>For example: if "Weigel, Brandon"; "B. Weigel", and "Brandon John Weigel" appear in your repository, and they are all the same person, those values <em>must be identical</em> across all your metadata. Choose one form of the name that is used in all of your objects.</li>
+</ul>
+</li>
+<li>Ensure that corporate vs personal names are properly tagged.<ul>
+<li>i.e. if "ABC Company" shows up under <code>&lt;name type="personal"&gt;</code>, that should be corrected to <code>&lt;name type="corporate"&gt;</code>.</li>
+</ul>
+</li>
+<li>Ensure that the form of name you choose is the one you wish to apply for all instances of that name going forward, as each name will become an entity in your repository.</li>
+</ul>
+</li>
+<li><a href="https://arcabc.ca/browse/roles">Role terms</a>:<ul>
+<li>All role terms should match the <a href="https://www.loc.gov/marc/relators/relaterm.html">MARC Relator Term List</a>.<ul>
+<li>Ensure consistency in spelling, format, and case.</li>
+</ul>
+</li>
+<li>If your name has more than one role associated with them, use multiple <code>&lt;role&gt;</code> element sets. i.e.
+    <code>&lt;name type="personal"&gt;
+         &lt;namePart&gt;Weigel, Brandon&lt;/namePart&gt;
+         &lt;role&gt;
+           &lt;roleTerm authority="marcrelator&gt;"&gt;Director&lt;/roleTerm&gt;
+          &lt;/role&gt;
+          &lt;role&gt;
+            &lt;roleTerm authority="marcrelator&gt;&gt;Producer&lt;/roleTerm&gt;
+          &lt;/role&gt;
+      &lt;/name&gt;</code>  </li>
+<li>If there is no MARC Relator term that fits your person's role, you may use a local term with <code>authority="local"</code> noted.<ul>
+<li>Be consistent with your local terms: i.e. consistent case, consistent spelling, etc.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://arcabc.ca/browse/typeofresource">Type of Resource</a><ul>
+<li>Values in the MODS element <code>&lt;typeOfResource&gt;</code> may <strong>only</strong> come from the following list:<ul>
+<li>cartographic</li>
+<li>manuscript</li>
+<li>map</li>
+<li>mixed material</li>
+<li>moving image</li>
+<li>notated music</li>
+<li>software, multimedia</li>
+<li>sound recording</li>
+<li>sound recording-musical</li>
+<li>sound recording-nonmusical</li>
+<li>still image</li>
+<li>text</li>
+<li>three dimensional object</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Subjects - includes <a href="https://arcabc.ca/browse/subject">topical</a>, <a href="https://arcabc.ca/browse/geographic">geographic</a>, temporal, and named subjects):<ul>
+<li>Subject terms are not controlled throughout Arca, but should be consistent within your own repository.</li>
+<li>Review your subjects to make sure they are deduplicated, consistent, and broad enough to group like objects together.</li>
+<li>Multiple subjects must be in separate elements. <ul>
+<li>Example: an object with the subjects "Fitness, Bowling, and Recreation" will look like:
+  <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>&lt;subject&gt;
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  &lt;topic&gt;Fitness&lt;/topic&gt;
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>&lt;/subject&gt;
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>&lt;subject&gt;
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  &lt;topic&gt;Bowling&lt;/topic&gt;
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>&lt;/subject&gt;
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>&lt;subject&gt;
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>  &lt;topic&gt;Recreation&lt;/topic&gt;
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>&lt;/subject&gt;
+</span></code></pre></div></li>
+</ul>
+</li>
+<li>For named subjects, follow the same standards as you apply to names.</li>
+</ul>
+</li>
+</ul>
+<p>These are the most critical metadata elements to correct, but best practice is to review all of your more common metadata fields to ensure consistency and accuracy before we migrate your data.</p>
+<h2 id="why-must-we-do-this">Why must we do this?<a class="headerlink" href="#why-must-we-do-this" title="Permanent link">&para;</a></h2>
+<p>In Islandora 7, MODS metadata is free-form, and objects are more or less independent of one another. In Islandora 2, the system is better-integrated, and our metadata schema uses <strong>term references</strong> for certain fields.</p>
+<p>Metadata like Genres, Roles, Names, and Subjects are no longer plain text -- they are Taxonomy Term References. This means that they are stored separately in your database, and linked to. The benefit of this is that any time you have an object by "B. Weigel", instead of typing "B. Weigel" or "Brandon Weigel" or another form in the Name field, you select the canonical name from a list, and create a link to the "B. Weigel" entity. Same with Genre, Role, and Subject.</p>
+<p>In order for our migrated metadata to be accurate, those terms and names must be correct and consistent across <em>all</em> Islandora objects. Each different value under <code>&lt;genre&gt;</code> will create a separate taxonomy entry -- it will be bad for your repository to have "Book", "book", "books", and "Books." as different options with different objects collected under them.</p>
+<p>Similarly, you don't want your repository collecting some works under "B. Weigel" and others under "Brandon Weigel" if they all belong to the same author.</p>
+<p>This cleanup task must be done <em>before</em> the migration, because the creation of those terms is automated. And it is easier to correct text pre-migration than to merge terms and correct database entires afterward.</p>
+<h2 id="how-do-i-create-my-own-facet-pages">How do I create my own Facet Pages?<a class="headerlink" href="#how-do-i-create-my-own-facet-pages" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Enable the module "Islandora Solr Facet Pages"</li>
+<li>Configure the module under <code>Islandora -&gt; Solr -&gt; Facet pages</code>:<ul>
+<li>For each field you want to browse, enter the Solr field in question (e.g. <code>mods_genre_ms</code>), a readable label, and a path (e.g. <code>genre</code>)<ul>
+<li>To identify the Solr fields you're interested in, see the <a href="https://docs.google.com/document/d/1SEU5nxGPJNXbQx3767Y4YoVzOSvoPtHHWO8Ux8rbllU/edit?usp=sharing">Useful Solr Fields</a> document.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Under <code>Structure -&gt; Blocks</code>, enable the block <code>Islandora Solr Facet Pages</code> under the <code>First Sidebar</code> region.<ul>
+<li>Configure the block, to appear under "Only the listed pages" and enter <code>browse/*</code>.</li>
+</ul>
+</li>
+<li>Navigate to your facet pages by going to <code>/browse/[path]</code>. In the <code>genre</code> example given above, that would be <code>/browse/genre</code>.    </li>
+</ul>
+<h2 id="how-do-i-make-corrections">How do I make corrections?<a class="headerlink" href="#how-do-i-make-corrections" title="Permanent link">&para;</a></h2>
+<p>The best approach to batch metadata changes is using the module Islandora Datastreams I/O, and a text editor like BBEdit or Notepad++. This video walks you through the process: https://youtu.be/hjBRml74_eY</p>
+<p>The modules that showed you the field values will also link you out to search results showing all of the objects with a given value. From those results, you can collect a list of PIDs or copy the Solr search to use with Datastreams I/O to export the MODS for editing.</p>
+<p>If you have difficulty or are not comfortable with the process, please <a href="mailto:arcaoffice@bceln.ca">let the Arca Office know</a>! We will be more than willing to help you out.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.edit", "content.action.view", "announce.dismiss"], "search": "../../../assets/javascripts/workers/search.c011b7c0.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.7389ff0e.min.js"></script>
+      
+    
+  </body>
+</html>

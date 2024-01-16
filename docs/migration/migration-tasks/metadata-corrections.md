@@ -31,7 +31,7 @@ When your metadata has been corrected, please be sure to apply those standards t
     * If it is truly impossible to find a term in either of the above vocabularies, use the `authority="local"` attribute.
         * Check the standard vocabularies for a synonym first.
         * Format your term to match existing usage (i.e. lowercase, no punctuation).
-    * There should be *only one value per `<genre>` element. If your object has more than one genre, use multiple genre elements -- i.e. `<genre authority="marcgt">thesis</genre>  <genre authority="aat">photography</genre>`
+    * There should be *only one value per `<genre>` element*. If your object has more than one genre, use multiple genre elements -- i.e. `<genre authority="marcgt">thesis</genre>  <genre authority="aat">photography</genre>`
 * Names ([personal](https://arcabc.ca/browse/names_personal) and [corporate](https://arcabc.ca/browse/names_corporate)): 
     * Names must be consistent and deduplicated.
         * For example: if "Weigel, Brandon"; "B. Weigel", and "Brandon John Weigel" appear in your repository, and they are all the same person, those values *must be identical* across all your metadata. Choose one form of the name that is used in all of your objects.
