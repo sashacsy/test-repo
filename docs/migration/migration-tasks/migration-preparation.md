@@ -24,6 +24,7 @@ Following are the steps that must be taken to prepare your site for migration.
         * Open the following two documents, copy their contents, and paste into the Import field:
             * [Management restrictions](/arca-docs/assets/management_restrictions_import.txt)
             * [Viewing restrictions](/arca-docs/assets/viewing_restrictions_import.txt)
+        * Save these new Views
     * Look at each of these views at their appropriate paths:
         * Mangement restrictions: `/restricted-objects`
         * Viewing restrictions: `/viewing-restricted-objects`
