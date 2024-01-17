@@ -1,0 +1,157 @@
+$view = new view();
+$view->name = 'viewing_restricted_objects';
+$view->description = '';
+$view->tag = 'default';
+$view->base_table = 'islandora_solr';
+$view->human_name = 'Viewing-Restricted Objects';
+$view->core = 7;
+$view->api_version = '3.0';
+$view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+/* Display: Master */
+$handler = $view->new_display('default', 'Master', 'default');
+$handler->display->display_options['title'] = 'Restricted Objects';
+$handler->display->display_options['use_more_always'] = FALSE;
+$handler->display->display_options['access']['type'] = 'role';
+$handler->display->display_options['access']['role'] = array(
+  3 => '3',
+  5 => '5',
+  4 => '4',
+);
+$handler->display->display_options['cache']['type'] = 'none';
+$handler->display->display_options['query']['type'] = 'views_query';
+$handler->display->display_options['exposed_form']['type'] = 'basic';
+$handler->display->display_options['pager']['type'] = 'full';
+$handler->display->display_options['pager']['options']['items_per_page'] = '25';
+$handler->display->display_options['style_plugin'] = 'table';
+$handler->display->display_options['style_options']['columns'] = array(
+  'dc.title' => 'dc.title',
+  'PID' => 'PID',
+  'RELS_EXT_isManageableByRole_literal_ms' => 'RELS_EXT_isManageableByRole_literal_ms',
+  'RELS_EXT_isManageableByUser_literal_ms' => 'RELS_EXT_isManageableByUser_literal_ms',
+  'RELS_EXT_isMemberOfCollection_uri_ms' => 'RELS_EXT_isMemberOfCollection_uri_ms',
+);
+$handler->display->display_options['style_options']['class'] = '';
+$handler->display->display_options['style_options']['default'] = '-1';
+$handler->display->display_options['style_options']['info'] = array(
+  'dc.title' => array(
+    'align' => '',
+    'separator' => '',
+    'empty_column' => 0,
+  ),
+  'PID' => array(
+    'sortable' => 0,
+    'default_sort_order' => 'asc',
+    'align' => '',
+    'separator' => '',
+    'empty_column' => 0,
+  ),
+  'RELS_EXT_isManageableByRole_literal_ms' => array(
+    'align' => '',
+    'separator' => '',
+    'empty_column' => 0,
+  ),
+  'RELS_EXT_isManageableByUser_literal_ms' => array(
+    'align' => '',
+    'separator' => '',
+    'empty_column' => 0,
+  ),
+  'RELS_EXT_isMemberOfCollection_uri_ms' => array(
+    'align' => '',
+    'separator' => '',
+    'empty_column' => 0,
+  ),
+);
+/* Field: Islandora Solr: dc.title */
+$handler->display->display_options['fields']['dc.title']['id'] = 'dc.title';
+$handler->display->display_options['fields']['dc.title']['table'] = 'islandora_solr';
+$handler->display->display_options['fields']['dc.title']['field'] = 'dc.title';
+$handler->display->display_options['fields']['dc.title']['label'] = 'Title';
+$handler->display->display_options['fields']['dc.title']['link_to_object'] = 1;
+/* Field: Islandora Solr: PID */
+$handler->display->display_options['fields']['PID']['id'] = 'PID';
+$handler->display->display_options['fields']['PID']['table'] = 'islandora_solr';
+$handler->display->display_options['fields']['PID']['field'] = 'PID';
+$handler->display->display_options['fields']['PID']['link_to_object'] = 1;
+/* Field: Islandora Solr: RELS_EXT_isMemberOfCollection_uri_ms */
+$handler->display->display_options['fields']['RELS_EXT_isMemberOfCollection_uri_ms']['id'] = 'RELS_EXT_isMemberOfCollection_uri_ms';
+$handler->display->display_options['fields']['RELS_EXT_isMemberOfCollection_uri_ms']['table'] = 'islandora_solr';
+$handler->display->display_options['fields']['RELS_EXT_isMemberOfCollection_uri_ms']['field'] = 'RELS_EXT_isMemberOfCollection_uri_ms';
+$handler->display->display_options['fields']['RELS_EXT_isMemberOfCollection_uri_ms']['label'] = 'Parent Collection';
+$handler->display->display_options['fields']['RELS_EXT_isMemberOfCollection_uri_ms']['link_to_object'] = 1;
+/* Field: Islandora Solr: RELS_EXT_isViewableByRole_literal_ms */
+$handler->display->display_options['fields']['RELS_EXT_isViewableByRole_literal_ms']['id'] = 'RELS_EXT_isViewableByRole_literal_ms';
+$handler->display->display_options['fields']['RELS_EXT_isViewableByRole_literal_ms']['table'] = 'islandora_solr';
+$handler->display->display_options['fields']['RELS_EXT_isViewableByRole_literal_ms']['field'] = 'RELS_EXT_isViewableByRole_literal_ms';
+$handler->display->display_options['fields']['RELS_EXT_isViewableByRole_literal_ms']['label'] = 'Viewing restrictions - Role';
+$handler->display->display_options['fields']['RELS_EXT_isViewableByRole_literal_ms']['link_to_object'] = 0;
+/* Field: Islandora Solr: RELS_EXT_isViewableByUser_literal_ms */
+$handler->display->display_options['fields']['RELS_EXT_isViewableByUser_literal_ms']['id'] = 'RELS_EXT_isViewableByUser_literal_ms';
+$handler->display->display_options['fields']['RELS_EXT_isViewableByUser_literal_ms']['table'] = 'islandora_solr';
+$handler->display->display_options['fields']['RELS_EXT_isViewableByUser_literal_ms']['field'] = 'RELS_EXT_isViewableByUser_literal_ms';
+$handler->display->display_options['fields']['RELS_EXT_isViewableByUser_literal_ms']['label'] = 'Viewing restrictions - User';
+$handler->display->display_options['fields']['RELS_EXT_isViewableByUser_literal_ms']['link_to_object'] = 0;
+/* Sort criterion: Islandora Solr: PID */
+$handler->display->display_options['sorts']['PID']['id'] = 'PID';
+$handler->display->display_options['sorts']['PID']['table'] = 'islandora_solr';
+$handler->display->display_options['sorts']['PID']['field'] = 'PID';
+/* Sort criterion: Islandora Solr: RELS_EXT_isMemberOfCollection_uri_ss */
+$handler->display->display_options['sorts']['RELS_EXT_isMemberOfCollection_uri_ss']['id'] = 'RELS_EXT_isMemberOfCollection_uri_ss';
+$handler->display->display_options['sorts']['RELS_EXT_isMemberOfCollection_uri_ss']['table'] = 'islandora_solr';
+$handler->display->display_options['sorts']['RELS_EXT_isMemberOfCollection_uri_ss']['field'] = 'RELS_EXT_isMemberOfCollection_uri_ss';
+$handler->display->display_options['filter_groups']['groups'] = array(
+  1 => 'OR',
+  3 => 'AND',
+  2 => 'AND',
+);
+/* Filter criterion: Islandora Solr: RELS_EXT_isMemberOfCollection_uri_mt */
+$handler->display->display_options['filters']['RELS_EXT_isMemberOfCollection_uri_mt']['id'] = 'RELS_EXT_isMemberOfCollection_uri_mt';
+$handler->display->display_options['filters']['RELS_EXT_isMemberOfCollection_uri_mt']['table'] = 'islandora_solr';
+$handler->display->display_options['filters']['RELS_EXT_isMemberOfCollection_uri_mt']['field'] = 'RELS_EXT_isMemberOfCollection_uri_mt';
+$handler->display->display_options['filters']['RELS_EXT_isMemberOfCollection_uri_mt']['group'] = 2;
+$handler->display->display_options['filters']['RELS_EXT_isMemberOfCollection_uri_mt']['exposed'] = TRUE;
+$handler->display->display_options['filters']['RELS_EXT_isMemberOfCollection_uri_mt']['expose']['operator_id'] = '';
+$handler->display->display_options['filters']['RELS_EXT_isMemberOfCollection_uri_mt']['expose']['label'] = 'Collection PID';
+$handler->display->display_options['filters']['RELS_EXT_isMemberOfCollection_uri_mt']['expose']['description'] = 'Enter some or all of the collection PID (namespace:identifier)';
+$handler->display->display_options['filters']['RELS_EXT_isMemberOfCollection_uri_mt']['expose']['identifier'] = 'rels_ext_ismemberofcollection_uri_mt';
+$handler->display->display_options['filters']['RELS_EXT_isMemberOfCollection_uri_mt']['expose']['remember_roles'] = array(
+  2 => '2',
+);
+/* Filter criterion: Islandora Solr: PID_namespace_t */
+$handler->display->display_options['filters']['PID_namespace_t']['id'] = 'PID_namespace_t';
+$handler->display->display_options['filters']['PID_namespace_t']['table'] = 'islandora_solr';
+$handler->display->display_options['filters']['PID_namespace_t']['field'] = 'PID_namespace_t';
+$handler->display->display_options['filters']['PID_namespace_t']['group'] = 3;
+$handler->display->display_options['filters']['PID_namespace_t']['exposed'] = TRUE;
+$handler->display->display_options['filters']['PID_namespace_t']['expose']['operator_id'] = '';
+$handler->display->display_options['filters']['PID_namespace_t']['expose']['label'] = 'Namespace';
+$handler->display->display_options['filters']['PID_namespace_t']['expose']['description'] = 'Filter on namespace.';
+$handler->display->display_options['filters']['PID_namespace_t']['expose']['identifier'] = 'pid_namespace_t';
+$handler->display->display_options['filters']['PID_namespace_t']['expose']['remember_roles'] = array(
+  2 => '2',
+);
+/* Filter criterion: Islandora Solr: RELS_EXT_isViewableByRole_literal_ms */
+$handler->display->display_options['filters']['RELS_EXT_isViewableByRole_literal_ms']['id'] = 'RELS_EXT_isViewableByRole_literal_ms';
+$handler->display->display_options['filters']['RELS_EXT_isViewableByRole_literal_ms']['table'] = 'islandora_solr';
+$handler->display->display_options['filters']['RELS_EXT_isViewableByRole_literal_ms']['field'] = 'RELS_EXT_isViewableByRole_literal_ms';
+$handler->display->display_options['filters']['RELS_EXT_isViewableByRole_literal_ms']['value'] = '*';
+/* Filter criterion: Islandora Solr: RELS_EXT_isViewableByUser_literal_ms */
+$handler->display->display_options['filters']['RELS_EXT_isViewableByUser_literal_ms']['id'] = 'RELS_EXT_isViewableByUser_literal_ms';
+$handler->display->display_options['filters']['RELS_EXT_isViewableByUser_literal_ms']['table'] = 'islandora_solr';
+$handler->display->display_options['filters']['RELS_EXT_isViewableByUser_literal_ms']['field'] = 'RELS_EXT_isViewableByUser_literal_ms';
+$handler->display->display_options['filters']['RELS_EXT_isViewableByUser_literal_ms']['value'] = '*';
+
+/* Display: Page */
+$handler = $view->new_display('page', 'Page', 'page');
+$handler->display->display_options['path'] = 'viewing-restricted-objects';
+
+/* Display: Data export */
+$handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
+$handler->display->display_options['pager']['type'] = 'none';
+$handler->display->display_options['pager']['options']['offset'] = '0';
+$handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+$handler->display->display_options['path'] = 'viewing-restricted-objects/export.csv';
+$handler->display->display_options['displays'] = array(
+  'page' => 'page',
+  'default' => 0,
+);
