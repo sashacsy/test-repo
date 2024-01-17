@@ -47,4 +47,5 @@ nav:
     - Timeline: migration/migration-timeline.md
     - Metadata Mapping: migration/metadata-mapping.md
     - Migration Tasks:
+      - Prepare Your Site: migration/migration-tasks/migration-preparation.md
       - Metadata Corrections: migration/migration-tasks/metadata-corrections.md
