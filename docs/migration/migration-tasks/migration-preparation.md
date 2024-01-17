@@ -19,12 +19,12 @@ Following are the steps that must be taken to prepare your site for migration.
         * To publish an object, check its box on the Simple Workflow page, and click `Publish Selected` when you have selected all the items to be published. Choose `Publish All` to publish all of them.
         * To delete an object, `Manage` the object, go to `Properties`, and choose `Permanently remove [this item] from repository`.
 4. Review your XACML-restricted objects to confirm that only intended objects are restricted, and that *only Viewing restrictions are applied*:
-    * Create Views that expose restricted objects:
+    * Create Views that expose restricted objects. This will be done twice; once for a Management Restrictions view, and again for a Viewing Restrictions view.
         * Go to `Structure -> Views Import`
-        * Open the following two documents, copy their contents, and paste into the Import field:
+        * Open the relevant Views Import document, copy its contents, and paste into the Import field:
             * [Management restrictions](/arca-docs/assets/management_restrictions_import.txt)
             * [Viewing restrictions](/arca-docs/assets/viewing_restrictions_import.txt)
-        * Save these new Views
+        * Save your new View
     * Look at each of these views at their appropriate paths:
         * Mangement restrictions: `/restricted-objects`
         * Viewing restrictions: `/viewing-restricted-objects`
