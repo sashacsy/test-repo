@@ -60,6 +60,7 @@ Some objects may have the "deleted" property set, but have not yet been removed 
 ## Review Users list
 
 Review your list of users at `/admin/people`:
+
   * If any users should no longer be in the system, cancel their accounts.
   * If any users have the wrong role, edit the user and change them.
   

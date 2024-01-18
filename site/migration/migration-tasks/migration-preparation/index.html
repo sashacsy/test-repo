@@ -822,19 +822,27 @@
 </code></pre></div>
 <p><em>No inactive object should remain in the repository.</em></p>
 <h2 id="review-xacml-policies">Review XACML policies<a class="headerlink" href="#review-xacml-policies" title="Permanent link">&para;</a></h2>
-<p>Review your XACML-restricted objects to confirm that only intended objects are restricted, and that <em>only Viewing restrictions are applied</em>:
-  * Create Views that expose restricted objects. This will be done twice; once for a Management Restrictions view, and again for a Viewing Restrictions view.
-      * Go to <code>Structure -&gt; Views Import</code>
-      * Open the relevant Views Import document, copy its contents, and paste into the Import field:
-          * <a href="/arca-docs/assets/management_restrictions_import.txt">Management restrictions</a>
-          * <a href="/arca-docs/assets/viewing_restrictions_import.txt">Viewing restrictions</a>
-      * Save your new View
-  * Look at each of these views at their appropriate paths:
-      * Mangement restrictions: <code>/restricted-objects</code>
-      * Viewing restrictions: <code>/viewing-restricted-objects</code>
-      * Export a CSV from those pages if it is easier
-  * If you have objects with <em>Management</em> restrictions, remove those restrictions - Management restrictions are not useful in Islandora, and may cause problems.
-  * For each object with Viewing restrictions, make sure that these are still required, and that the appropriate roles have access; if the restrictions are no longer required, remove them.</p>
+<p>Review your XACML-restricted objects to confirm that only intended objects are restricted, and that <em>only Viewing restrictions are applied</em>:</p>
+<ul>
+<li>Create Views that expose restricted objects. This will be done twice; once for a Management Restrictions view, and again for a Viewing Restrictions view.<ul>
+<li>Go to <code>Structure -&gt; Views Import</code></li>
+<li>Open the relevant Views Import document, copy its contents, and paste into the Import field:<ul>
+<li><a href="/arca-docs/assets/management_restrictions_import.txt">Management restrictions</a></li>
+<li><a href="/arca-docs/assets/viewing_restrictions_import.txt">Viewing restrictions</a></li>
+</ul>
+</li>
+<li>Save your new View</li>
+</ul>
+</li>
+<li>Look at each of these views at their appropriate paths:<ul>
+<li>Mangement restrictions: <code>/restricted-objects</code></li>
+<li>Viewing restrictions: <code>/viewing-restricted-objects</code></li>
+<li>Export a CSV from those pages if it is easier</li>
+</ul>
+</li>
+<li>If you have objects with <em>Management</em> restrictions, remove those restrictions - Management restrictions are not useful in Islandora, and may cause problems.</li>
+<li>For each object with Viewing restrictions, make sure that these are still required, and that the appropriate roles have access; if the restrictions are no longer required, remove them.</li>
+</ul>
 <h2 id="remove-deleted-objects">Remove "deleted" objects<a class="headerlink" href="#remove-deleted-objects" title="Permanent link">&para;</a></h2>
 <p>Some objects may have the "deleted" property set, but have not yet been removed from the repository. Identify, review, and remove all "deleted" objects.</p>
 <ul>
