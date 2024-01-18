@@ -546,6 +546,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Prepare Your Site
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -555,6 +566,79 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#metadata-corrections" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metadata Corrections
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remove-orphaned-objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove orphaned objects
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inactive-objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inactive Objects
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#review-xacml-policies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Review XACML policies
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remove-deleted-objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove "deleted" objects
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#review-users-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      Review Users list
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -617,6 +701,68 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#metadata-corrections" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metadata Corrections
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remove-orphaned-objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove orphaned objects
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inactive-objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inactive Objects
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#review-xacml-policies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Review XACML policies
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remove-deleted-objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove "deleted" objects
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#review-users-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      Review Users list
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -649,12 +795,14 @@
 <h1 id="preparing-your-site-for-migration">Preparing Your Site for Migration<a class="headerlink" href="#preparing-your-site-for-migration" title="Permanent link">&para;</a></h1>
 <p>Following are the steps that must be taken to prepare your site for migration.</p>
 <p><strong>This document is a work in progress, not a definitive list.</strong></p>
-<ol>
-<li>Ensure your metadata is ready for migration.<ul>
+<h2 id="metadata-corrections">Metadata Corrections<a class="headerlink" href="#metadata-corrections" title="Permanent link">&para;</a></h2>
+<p>Ensure your metadata is ready for migration.</p>
+<ul>
 <li>Follow all the guidance in the <a href="/arca-docs/migration/migration-tasks/metadata-corrections/">Metadata Corrections guide</a>.</li>
 </ul>
-</li>
-<li>Eliminate or migrate all Orphaned Objects:<ul>
+<h2 id="remove-orphaned-objects">Remove orphaned objects<a class="headerlink" href="#remove-orphaned-objects" title="Permanent link">&para;</a></h2>
+<p>Eliminate or migrate all Orphaned Objects:</p>
+<ul>
 <li>Orphaned objects are objects that are missing at least one of their assigned "parent" objects (newspapers, collections, etc.). Typically they become orphaned when the parent item is deleted.</li>
 <li>Find a list of all your orphaned objects at <code>Reports -&gt; Orphaned Islandora Objects</code>.</li>
 <li>Look at each object in the list, and determine whether it should be kept or deleted.<ul>
@@ -665,50 +813,39 @@
 <li>Review the Orphaned Objects report again to ensure that no new orphans were created when you deleted the last batch.</li>
 <li><em>No orphaned objects should remain in the repository.</em></li>
 </ul>
-</li>
-<li>Eliminate or activate all your Inactive objects:<ul>
-<li>Go to <code>Islandora -&gt; Islandora Utility Modules -&gt; Simple Workflow Inactive Objects</code></li>
-<li>For each inactive object, review and determine whether it should be published or deleted.<ul>
-<li>To publish an object, check its box on the Simple Workflow page, and click <code>Publish Selected</code> when you have selected all the items to be published. Choose <code>Publish All</code> to publish all of them.</li>
-<li>To delete an object, <code>Manage</code> the object, go to <code>Properties</code>, and choose <code>Permanently remove [this item] from repository</code>.</li>
-</ul>
-</li>
-<li><em>No inactive object should remain in the repository.</em></li>
-</ul>
-</li>
-<li>Review your XACML-restricted objects to confirm that only intended objects are restricted, and that <em>only Viewing restrictions are applied</em>:<ul>
-<li>Create Views that expose restricted objects. This will be done twice; once for a Management Restrictions view, and again for a Viewing Restrictions view.<ul>
-<li>Go to <code>Structure -&gt; Views Import</code></li>
-<li>Open the relevant Views Import document, copy its contents, and paste into the Import field:<ul>
-<li><a href="/arca-docs/assets/management_restrictions_import.txt">Management restrictions</a></li>
-<li><a href="/arca-docs/assets/viewing_restrictions_import.txt">Viewing restrictions</a></li>
-</ul>
-</li>
-<li>Save your new View</li>
-</ul>
-</li>
-<li>Look at each of these views at their appropriate paths:<ul>
-<li>Mangement restrictions: <code>/restricted-objects</code></li>
-<li>Viewing restrictions: <code>/viewing-restricted-objects</code></li>
-<li>Export a CSV from those pages if it is easier</li>
-</ul>
-</li>
-<li>If you have objects with <em>Management</em> restrictions, remove those restrictions - Management restrictions are not useful in Islandora, and may cause problems.</li>
-<li>For each object with Viewing restrictions, make sure that these are still required, and that the appropriate roles have access; if the restrictions are no longer required, remove them.</li>
-</ul>
-</li>
-<li>Review and remove "deleted" objects (objects still in the repository with the <code>Deleted</code> property):<ul>
+<h2 id="inactive-objects">Inactive Objects<a class="headerlink" href="#inactive-objects" title="Permanent link">&para;</a></h2>
+<p>Eliminate or publish all your Inactive objects:</p>
+<div class="language-text highlight"><pre><span></span><code>* Go to `Islandora -&gt; Islandora Utility Modules -&gt; Simple Workflow Inactive Objects`
+* For each inactive object, review and determine whether it should be published or deleted.
+    * To publish an object, check its box on the Simple Workflow page, and click `Publish Selected` when you have selected all the items to be published. Choose `Publish All` to publish all of them.
+    * To delete an object, `Manage` the object, go to `Properties`, and choose `Permanently remove [this item] from repository`.
+</code></pre></div>
+<p><em>No inactive object should remain in the repository.</em></p>
+<h2 id="review-xacml-policies">Review XACML policies<a class="headerlink" href="#review-xacml-policies" title="Permanent link">&para;</a></h2>
+<p>Review your XACML-restricted objects to confirm that only intended objects are restricted, and that <em>only Viewing restrictions are applied</em>:
+  * Create Views that expose restricted objects. This will be done twice; once for a Management Restrictions view, and again for a Viewing Restrictions view.
+      * Go to <code>Structure -&gt; Views Import</code>
+      * Open the relevant Views Import document, copy its contents, and paste into the Import field:
+          * <a href="/arca-docs/assets/management_restrictions_import.txt">Management restrictions</a>
+          * <a href="/arca-docs/assets/viewing_restrictions_import.txt">Viewing restrictions</a>
+      * Save your new View
+  * Look at each of these views at their appropriate paths:
+      * Mangement restrictions: <code>/restricted-objects</code>
+      * Viewing restrictions: <code>/viewing-restricted-objects</code>
+      * Export a CSV from those pages if it is easier
+  * If you have objects with <em>Management</em> restrictions, remove those restrictions - Management restrictions are not useful in Islandora, and may cause problems.
+  * For each object with Viewing restrictions, make sure that these are still required, and that the appropriate roles have access; if the restrictions are no longer required, remove them.</p>
+<h2 id="remove-deleted-objects">Remove "deleted" objects<a class="headerlink" href="#remove-deleted-objects" title="Permanent link">&para;</a></h2>
+<p>Some objects may have the "deleted" property set, but have not yet been removed from the repository. Identify, review, and remove all "deleted" objects.</p>
+<ul>
 <li>Go to <code>Islandora -&gt; Manage Deleted Objects</code></li>
 <li>Select all content models, to see all "deleted" objects</li>
 <li>Review the objects, and either restore or purge them. No "deleted" objects should remain in the repository.</li>
 </ul>
-</li>
-<li>Review your list of users at <code>/admin/people</code>:<ul>
-<li>If any users should no longer be in the system, cancel their accounts.</li>
-<li>If any users have the wrong role, edit the user and change them.</li>
-</ul>
-</li>
-</ol>
+<h2 id="review-users-list">Review Users list<a class="headerlink" href="#review-users-list" title="Permanent link">&para;</a></h2>
+<p>Review your list of users at <code>/admin/people</code>:
+  * If any users should no longer be in the system, cancel their accounts.
+  * If any users have the wrong role, edit the user and change them.</p>
 <p><a href="mailto:arcaoffice@bceln.ca">Contact the Arca Office</a> if you need any assistance with these tasks.</p>
 
 

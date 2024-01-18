@@ -35,6 +35,7 @@ Eliminate or publish all your Inactive objects:
 ## Review XACML policies
 
 Review your XACML-restricted objects to confirm that only intended objects are restricted, and that *only Viewing restrictions are applied*:
+
   * Create Views that expose restricted objects. This will be done twice; once for a Management Restrictions view, and again for a Viewing Restrictions view.
       * Go to `Structure -> Views Import`
       * Open the relevant Views Import document, copy its contents, and paste into the Import field:
