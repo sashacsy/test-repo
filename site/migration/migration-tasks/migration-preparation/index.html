@@ -663,6 +663,7 @@
 </ul>
 </li>
 <li>Review the Orphaned Objects report again to ensure that no new orphans were created when you deleted the last batch.</li>
+<li><em>No orphaned objects should remain in the repository.</em></li>
 </ul>
 </li>
 <li>Eliminate or activate all your Inactive objects:<ul>
@@ -672,6 +673,7 @@
 <li>To delete an object, <code>Manage</code> the object, go to <code>Properties</code>, and choose <code>Permanently remove [this item] from repository</code>.</li>
 </ul>
 </li>
+<li><em>No inactive object should remain in the repository.</em></li>
 </ul>
 </li>
 <li>Review your XACML-restricted objects to confirm that only intended objects are restricted, and that <em>only Viewing restrictions are applied</em>:<ul>
@@ -695,7 +697,19 @@
 <li>For each object with Viewing restrictions, make sure that these are still required, and that the appropriate roles have access; if the restrictions are no longer required, remove them.</li>
 </ul>
 </li>
+<li>Review and remove "deleted" objects (objects still in the repository with the <code>Deleted</code> property):<ul>
+<li>Go to <code>Islandora -&gt; Manage Deleted Objects</code></li>
+<li>Select all content models, to see all "deleted" objects</li>
+<li>Review the objects, and either restore or purge them. No "deleted" objects should remain in the repository.</li>
+</ul>
+</li>
+<li>Review your list of users at <code>/admin/people</code>:<ul>
+<li>If any users should no longer be in the system, cancel their accounts.</li>
+<li>If any users have the wrong role, edit the user and change them.</li>
+</ul>
+</li>
 </ol>
+<p><a href="mailto:arcaoffice@bceln.ca">Contact the Arca Office</a> if you need any assistance with these tasks.</p>
 
 
 
