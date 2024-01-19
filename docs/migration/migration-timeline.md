@@ -36,7 +36,7 @@ Check back here regularly for updates.
 | *Infrastructure Phase (January 2024 to May 2024)* | *Start Date*   | *End Date* | *Partners*   | *Status*                                                      |
 | ----------------------------------------------- | ------------ | ------------- | ------------ | ------------------------------------------------------------- |
 | Demo machine provisioned                        | January 2024 |               | DGI          |                                                               |
-|     - Member orientation in demo machine        | January 2024 | February 2024 | Members      |                                                               |
+|     - Member orientation in demo machine        | January 2024 | February 2024 | Members      |                                                               |
 |     - Testing and exploration in demo machine   | January 2024 | April 2024    | Members      |                                                               |
 | Base images built and tested                    | January 2024 | April 2024    | DGI          |                                                               |
 | Virtual machines provisioned                    | May 2023     | July 2024     | SFU          | Agreement treached with SFU. Machines will be built as needed |
@@ -49,6 +49,7 @@ Check back here regularly for updates.
 | Site-by-site installation, migration and configurations begun                                          | July 2024    | December 2024 | DGI, Members |        |
 |     - Identify custom configurations for each site                                                     |              |               | Members      |        |
 |     - In-depth metadata amelioration for each site as their turn comes up                              |              |               | Members      |        |
+|     - Ingest freeze for each site when their migration begins                                          |              |               | Members      |        |
 |     - Basic Training sessions conducted in batches of roughly 3-4 member organizations, post-migration |              | Members       |              |
 | Site-by-site migrations completed                                                                      | January 2025 | June 2025     | DGI, Members |        |
 | Site-by-site configurations completed                                                                  | April 2025   | June 2025     | DGI Members  |        |
