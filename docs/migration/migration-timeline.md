@@ -24,7 +24,7 @@ Check back here regularly for updates.
 | *Planning Phase (March 2024 to April 2024)*              | *Start Date* | *End Date*    | *Partners* | *Status*  |
 | -------------------------------------------------------- | ------------ | ------------- | -------- | ----------- |
 | Establish migration schedule                             | March 2024   | April 2024    | Members  |             |
-|     - Work out configuration tweaks for first migration  | March 2024   |               | Members  |             |
+|     - Work out configuration tweaks for first migration  | March 2024   |               | Members  |             |
 |     - In-depth metadata amelioration for first migration | March 2024   | April 2024    | Members  |             |
 | Metadata amelioration                                    | May 2023     | April 2024    | Members  | In Progress |
 | Initial meeting with DGI Project Manager                 | January 2024 | January 2024  | DGI      | Complete    |
@@ -39,7 +39,7 @@ Check back here regularly for updates.
 |     - Member orientation in demo machine        | January 2024 | February 2024 | Members      |                                                               |
 |     - Testing and exploration in demo machine   | January 2024 | April 2024    | Members      |                                                               |
 | Base images built and tested                    | January 2024 | April 2024    | DGI          |                                                               |
-| Virtual machines provisioned                    | May 2023     | July 2024     | SFU          | Agreement treached with SFU. Machines will be built as needed |
+| Virtual machines provisioned                    | May 2023     | July 2024     | SFU          | Agreement reached with SFU. Machines will be built as needed |
 | First base image installed                      | April 2024   | May 2024      | DGI, Members |                                                               |
 
 
