@@ -26,10 +26,11 @@ Eliminate or migrate all Orphaned Objects:
 
 Eliminate or publish all your Inactive objects:
 
-    * Go to `Islandora -> Islandora Utility Modules -> Simple Workflow Inactive Objects`
-    * For each inactive object, review and determine whether it should be published or deleted.
-        * To publish an object, check its box on the Simple Workflow page, and click `Publish Selected` when you have selected all the items to be published. Choose `Publish All` to publish all of them.
-        * To delete an object, `Manage` the object, go to `Properties`, and choose `Permanently remove [this item] from repository`.
+  * Go to `Islandora -> Islandora Utility Modules -> Simple Workflow Inactive Objects`
+  * For each inactive object, review and determine whether it should be published or deleted.
+      * To publish an object, check its box on the Simple Workflow page, and click `Publish Selected` when you have selected all the items to be published. Choose `Publish All` to publish all of them.
+      * To delete an object, `Manage` the object, go to `Properties`, and choose `Permanently remove [this item] from repository`.
+
 *No inactive object should remain in the repository.*
 
 ## Review XACML policies

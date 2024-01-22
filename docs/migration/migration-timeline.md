@@ -45,12 +45,13 @@ Check back here regularly for updates.
 
 | *Migration Phase (May 2024 to June 2025)*                                                              | *Start Date* | *End Date*    | *Partners*   | *Status* |
 | ------------------------------------------------------------------------------------------------------ | ------------ | ------------- | ------------ | ------ |
+| Members [prepare their sites\(/arca-docs/migration/migration-tasks/migration-preparation/)             | January 2024	|               | Members      |        |
 | First site migration                                                                                   | May 2024     | July 2024     | DGI, Members |        |
 | Site-by-site installation, migration and configurations begun                                          | July 2024    | December 2024 | DGI, Members |        |
 |     - Identify custom configurations for each site                                                     |              |               | Members      |        |
 |     - In-depth metadata amelioration for each site as their turn comes up                              |              |               | Members      |        |
 |     - Ingest freeze for each site when their migration begins                                          |              |               | Members      |        |
-|     - Basic Training sessions conducted in batches of roughly 3-4 member organizations, post-migration |              | Members       |              |
+|     - Basic Training sessions conducted in batches of roughly 3-4 member organizations, post-migration |              | Members       |              |        |
 | Site-by-site migrations completed                                                                      | January 2025 | June 2025     | DGI, Members |        |
 | Site-by-site configurations completed                                                                  | April 2025   | June 2025     | DGI Members  |        |
 | Aggregator site built and configured                                                                   | April 2025   | June 2025     | DGI          |        |
